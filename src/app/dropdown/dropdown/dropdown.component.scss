@@ -1,0 +1,31 @@
+.dd-main-container {
+  width: 100px;
+  height: 18px;
+  border: 1px solid green;
+  border-radius: 10px;
+  box-shadow: 1px 0px 3px 0px rgba(0, 128, 0, 0.4);
+
+  padding: 3px 8px 3px 8px;
+
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 0px 3px 0px rgba(0, 128, 0, 0.8);
+  }
+
+  .dd-selected-text {
+    width: 90%;
+  }
+
+  .dd-icon {
+    width: 10%;
+    text-align: right;
+    font-size: 15px;
+  }
+
+}
