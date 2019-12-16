@@ -1,14 +1,17 @@
 <!-- main container -->
 <div class="dd-main-container">
   <!-- current selection -->
-  <div class="dd-selected-text">{{selectedText}}</div>
+  <div class="dd-selected-text">{{selectedItem.text}}</div>
   <!-- drop down button -->
-  <fa-icon [icon]="['fas', 'angle-down']" class="dd-icon"></fa-icon>
+  <div class="dd-icon" (click)="toggleList()">
+    <fa-icon [icon]="['fas', 'angle-down']"></fa-icon>
+  </div>
 
   <!-- list items container -->
-  <div class="dd-items-container">
+  <div class="dd-items-container" [ngClass]="{'dd-show-list': showItems}">
 
     <div *ngFor="let item of items" class="dd-item">
+      <div>{{item.text}}</div>
     </div>
 
   </div>
