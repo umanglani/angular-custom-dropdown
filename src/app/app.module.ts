@@ -6,10 +6,11 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { AppComponent } from './app.component';
 import { DropdownComponent } from './dropdown/dropdown/dropdown.component';
+import { TabsComponent } from './tabs/tabs/tabs.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, FontAwesomeModule ],
-  declarations: [ AppComponent, DropdownComponent ],
+  declarations: [ AppComponent, DropdownComponent, TabsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { 

@@ -1,0 +1,59 @@
+$tab-underline-color: #0F3D69;
+
+.tb-main-container {
+  display: flex;
+
+  .tb-tab {
+    margin: 0 15px;
+    position: relative;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .tb-title {
+      // padding: 0 0 5px 0;
+      height: 21px;
+      // border-bottom: 2px solid transparent;
+      overflow: hidden;
+      position: relative;
+
+     	&:before{
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        top: 16px;
+        left: 0;
+        background-color: $tab-underline-color;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        transition-duration: .5s;
+      }
+		
+      &:hover{
+        cursor: pointer;
+        &:before{
+          -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+        }
+      }
+    }
+
+    .tb-title-active {
+      &:before{
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        top: 16px;
+        left: 0;
+        background-color: $tab-underline-color;
+        -webkit-transform: translateY(60%);
+        transform: translateY(60%);
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<div class="tb-main-container">
+
+  <div *ngFor="let tab of tabs" class="tb-tab" (click)="selectTab($event, tab)">
+    <div class="tb-title" [ngClass]="{'tb-title-active': tab.active}" >{{tab.title}}</div>
+  </div>
+
+</div>
