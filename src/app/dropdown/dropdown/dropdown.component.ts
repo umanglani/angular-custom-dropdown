@@ -1,6 +1,11 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
+export interface DropdownItem {
+  id: number;
+  text: string;
+}
+
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
@@ -8,8 +13,8 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class DropdownComponent implements OnInit {
 
-  selectedItem: {id: number, text: string};
-  items: Array<{id: number, text: string}>;
+  selectedItem: DropdownItem;
+  items: Array<DropdownItem>;
   showItems: boolean;
 
   @HostListener('document:click', ['$event'])
@@ -22,7 +27,7 @@ export class DropdownComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.items = new Array<{id: number, text: string}>();
+    this.items = new Array<DropdownItem>();
     this.items.push({id: 1, text: 'On Schedule'});
     this.items.push({id: 2, text: 'Behind Schedule'});
     this.items.push({id: 3, text: 'On Hold'});
@@ -34,6 +39,10 @@ export class DropdownComponent implements OnInit {
     this.items.push({id: 3, text: 'On Hold'});
     this.selectedItem = this.items[0];
     this.showItems = false;
+  }
+
+  selectItem($e: DropdownItem) {
+    this.selectedItem = $e;
   }
 
   toggleList($event) {

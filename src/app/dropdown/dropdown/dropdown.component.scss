@@ -29,6 +29,20 @@ $height: 22px;
     }
 }
 
+@keyframes fadeIn {
+  from {
+   opacity: 0;
+  }
+
+  to {
+   opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 600ms forwards;
+}
+
 .dd-main-container {
   width: 120px;
   height: 22px;
