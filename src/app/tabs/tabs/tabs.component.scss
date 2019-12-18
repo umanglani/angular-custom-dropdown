@@ -1,4 +1,6 @@
 $tab-underline-color: #0F3D69;
+$tab-text-color: rgba(0, 0, 0, 0.5);
+$active-tab-text-color: black;
 
 .tb-main-container {
   display: flex;
@@ -17,6 +19,7 @@ $tab-underline-color: #0F3D69;
       // border-bottom: 2px solid transparent;
       overflow: hidden;
       position: relative;
+      color: $tab-text-color;
 
      	&:before{
         z-index: -1;
@@ -42,6 +45,7 @@ $tab-underline-color: #0F3D69;
     }
 
     .tb-title-active {
+      color: $active-tab-text-color;
       &:before{
         z-index: -1;
         position: absolute;

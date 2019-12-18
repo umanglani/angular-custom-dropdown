@@ -10,7 +10,7 @@
   <!-- list items container -->
   <div class="dd-items-container-parent" [ngClass]="{'dd-show-list fade-in': showItems}">
     <div class="dd-items-container">
-      <div *ngFor="let item of items" class="dd-item" (click)="selectItem(item)">
+      <div *ngFor="let item of items" class="dd-item" (click)="selectItem($event, item)">
         <div>{{item.text}}</div>
       </div>
     </div>
