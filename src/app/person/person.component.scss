@@ -1,0 +1,49 @@
+.person-image-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  background: transparent;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+
+  > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.img-big {
+  width: 55px;
+  height: 55px;
+
+  > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.img-medium {
+  width: 35px;
+  height: 35px;
+
+  > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.img-small {
+  width: 25px;
+  height: 25px;
+
+  > img {
+    width: 20px;
+    height: 20px;
+  }
+}
