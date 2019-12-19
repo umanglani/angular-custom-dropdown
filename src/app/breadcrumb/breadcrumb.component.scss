@@ -1,0 +1,45 @@
+.bc-main-container {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 14px;
+
+  .bc-item {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .bc-item:fist-child {
+      margin-left: 0;
+  }
+
+  fa-icon {
+    font-size: 12px;
+    margin: 0 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .bc-title {
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+
+  }
+}
+
+.align-right {
+  justify-content: flex-end !important;
+}

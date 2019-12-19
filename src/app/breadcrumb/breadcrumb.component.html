@@ -1,0 +1,7 @@
+<div class="bc-main-container" [ngClass]="{'align-right': bcConfig.align === 'right'}">
+  <div *ngFor="let bcItem of bcItems; let i = index;" class="bc-item">
+    <fa-icon [icon]="['fas', 'angle-left']" *ngIf="bcConfig.orientation === 'rtl'"></fa-icon>
+    <span class="bc-title">{{bcItem.text}}</span>
+    <span class="bc-symbol" *ngIf="bcConfig.orientation === 'ltr' && i > 0 && i < bcItems.length -1">&lt;</span>
+  </div>
+</div>
