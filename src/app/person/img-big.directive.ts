@@ -1,7 +1,7 @@
 import { Directive, ElementRef, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[appImgBig]'
+  selector: '[imgBig]'
 })
 export class ImgBigDirective implements OnInit, AfterViewInit {
 
@@ -18,7 +18,7 @@ export class ImgBigDirective implements OnInit, AfterViewInit {
 }
 
 @Directive({
-  selector: '[appImgMedium]'
+  selector: '[imgMedium]'
 })
 export class ImgMediumDirective implements OnInit, AfterViewInit {
 
@@ -35,7 +35,7 @@ export class ImgMediumDirective implements OnInit, AfterViewInit {
 }
 
 @Directive({
-  selector: '[appImgSmall]'
+  selector: '[imgSmall]'
 })
 export class ImgSmallDirective implements OnInit, AfterViewInit {
 
