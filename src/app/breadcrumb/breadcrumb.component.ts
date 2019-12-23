@@ -32,7 +32,7 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit() {
     this.bcConfig = {
       align: 'left',
-      orientation: 'rtl'
+      orientation: 'ltr'
     };
 
     this.bcItems = new Array<BreadcrumbItem>();
